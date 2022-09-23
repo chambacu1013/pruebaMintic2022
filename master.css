@@ -1,0 +1,284 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: helvetica;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+a {
+	color:  red;
+	text-decoration: none;
+}
+
+.btn{
+	cursor: pointer;
+	padding: 2px 15px;
+	font-size: 1.8rem;
+	background: #303990;
+	border: solid #303990;
+	border-radius: 5px;
+	color: #fff;
+}
+/*Generales*/
+
+
+.header-superior {
+	padding: 15px;
+	font-size: 1.6rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-superior--izquierdo{
+	width: 320px;
+}
+
+.header-superior--izquierdo a,
+.header-superior--izquierdo img{
+	width: 100%;
+}
+
+.contenedor-tamnio-letra {
+	padding: 1px 15px 0;
+}
+
+.cambio-tamanio-letra {
+	margin: 2px;
+}
+
+.cambio-tamanio-letra__pequenio {
+	font-size: 1.4rem;
+}
+.cambio-tamanio-letra__normal {
+	font-size: 1.6rem;
+}
+.cambio-tamanio-letra__grande{
+	font-size: 1.8rem;
+}
+.header-superior--derecho {
+	margin: 9px 0 0;
+}
+
+.header-superior--derecho *{
+	display: inline-block;
+}
+
+.header-superior--derecho .btn-acceder{
+
+}
+
+/*header superior*/
+
+.header-inferior{
+	padding: 0 15px;
+	background: #343a40;
+	font-size: 1.6rem;
+	display: flex;
+	justify-content: space-between;
+}
+.header-inferior--izquierdo .lista {
+	display: flex;
+	justify-content: flex-start;
+	list-style: none;
+}
+
+.main-item{
+	padding: 9px 14px 12px;
+	color: #fff;
+	display: inline-block;
+	font-size: 2rem;
+	transition: .3s;
+	cursor: pointer;
+}
+
+.main-item:hover{
+	background: #67717a;
+}
+
+.second-item{
+	position: absolute;
+	font-size: 2rem;
+	cursor: pointer;
+	background: #f3f3f3;
+	opacity: 0;
+	transition: .2s;
+	display: none;
+}
+.second-item a{
+	padding: 9px 14px 12px;
+	display: block;
+	color: #000;
+	border-bottom: .5px solid #000;
+	transition: .3s;
+	
+}
+.item:hover .second-item{
+	opacity: 1;
+	display: block;
+}
+
+.second-item a:hover{
+	background: hotpink;
+	color: #fff;
+
+}
+
+/*header inferior nav */
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	background: #303990;
+	font-size: 1.3rem;
+	color: #fff;
+	padding: 60px 50px 25px;
+}
+
+footer figcaption{
+	font-size: 1.2rem;
+}
+
+footer section {
+	max-width: 250px;
+}
+
+footer section,
+footer figure,{
+	max-width: 290px;
+}
+footer img {
+	max-width: 100%;
+}
+
+footer p,
+footer a,
+footer figcaption{
+	line-height: 150%;
+}
+footer section * {
+	margin: 0 0 15px;
+}
+
+footer a {
+	color:  #fff;
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+
+
+.footer-contenedor-redes-sociales ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+/*footer*/
+
+.banner {
+	position: relative;
+}
+
+.slides {
+	display: none;
+}
+
+#display-left{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	font-size: 4rem;
+}
+
+#display-right{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	font-size: 4rem;
+}
+
+/*banner*/
+
+.seccion-bienvenida{
+	padding: 30px 15px;
+	background: #303990;
+}
+
+.seccion-bienvenida h2{
+	font-size: 2.5rem;
+	text-align: center;
+	color: #fff;
+	font-weight: 100;
+	margin-bottom: 10px;
+}
+
+:root{
+	--var-lado-cuadrado: 75px ;
+}
+
+
+.seccion-bienvenida-decorador{
+	width: var( --var-lado-cuadrado );
+	height: var( --var-lado-cuadrado );
+	background: #303990;
+	transform: rotate(45deg);
+	position: absolute;
+    left: calc(50% - var(--var-lado-cuadrado) / 2);
+    bottom: -60px;
+    z-index: -1;
+}
+
+/*seccion bienvenida*/
+.secciones-mision-tic {
+	padding:  35px 15px;
+	background: #d4d7db;
+	display: flex;
+	justify-content: space-between;
+}
+.seccion-mision-tic{
+	padding:  15px;
+	max-width: 350px;
+}
+.seccion-mision-tic figure{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.seccion-mision-tic figcaption{
+	font-size: 2.2rem;
+	text-align: center;
+	margin: 30px 0px;
+
+}
+
+.seccion-mision-tic .contenedor-icon {
+	
+    overflow: hidden;
+    border-bottom: 2px solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.seccion-mision-tic .icono{
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	border: solid #878e95 10px;
+	background: #a5b0bb;
+	transform: translateY(50%);
+	transition: .4s;
+}
+.seccion-mision-tic:hover .icono{
+	transform: translateY(0);
+}
+
+.seccion-mision-tic--resumen{
+	font-size: 2rem;
+	text-align: center;
+}
+
+/*secciones-mision-tic*/
